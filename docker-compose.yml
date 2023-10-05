@@ -1,0 +1,9 @@
+version: '3.4'
+
+services:
+  load-balancer:
+    image: golang
+    build: .
+    container_name: load-balancer
+    ports:
+      - "8080:8080"
